@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* TOPO DA PAGINA */
+.topo {
+    background-color: pink;
+    width: 100%;
+    height: 92px;
+}
+
+.texto-topo {
+    background-color: red;
+    height: 62px;
+    width: 200px;
+}
+
+
+/* CORPO DA PAGINA */
+
+.corpo {
+    background-color: gray;
+    width: 100%;
+    min-height: 900px;
+    margin-top: 30px;
+}
+
+.comida {
+    background-color: yellow;
+    height: 300px;
+    width: 100%;
+}
+
+.bebida {
+    background-color: orange;
+    height: 300px;
+    width: 100%;
+}
+
+.sobremesa {
+    background-color: brown;
+    height: 300px;
+    width: 100%;
+}   
+
+.titulo-cardapio {
+    background-color: lightgrey;
+    width: 280px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.itens-cardapio {
+    background-color: aqua;
+}
+
+.cardapio {
+    margin-bottom: 30px;
+}
+
+.item {
+    background-color: purple;
+    width: 180px;
+    height: 230px;
+}
+
+/* ITENS DA PAGINA */
+
+.imagem-item {
+    background-color: pink;
+    width: auto;
+    height: 110px;
+}
+
+.texto-item {
+    background-color: blue;
+    height: 74px;
+    margin: 3px 0;
+}
+
+.rodape-item {
+    background-color: aliceblue;
+    height: 40px;
+}
+
+.preco-item {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 25px;
+}
+
+.selecao-item {
+    background-color: green;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* RODAPE DA PAGINA*/
+.rodape {
+    background-color: chartreuse;
+    width: 100%;
+    height: 70px;
+}
+
+.botao-rodape {
+    background-color: green;
+    width: 80%;
+    height: 50px;
+}
