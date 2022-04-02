@@ -6,15 +6,14 @@ p, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    overflow: overlay;
-}
-
 ion-icon {
     color: #32B72F;
     font-size: 23px;
 }
 
+body{
+    background-color: #E5E5E5;
+}
 /* TOPO DA PAGINA */
 .topo {
     background-color: #CF2B2B;
@@ -23,15 +22,17 @@ ion-icon {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.32);
 }
 
 .texto-topo {
-    background-color: red;
     height: 62px;
     margin-left: 15px;
     display: flex;
     flex-direction: column;
-
 }
 
 .texto-topo h1 {
@@ -46,32 +47,27 @@ ion-icon {
 /* CORPO DA PAGINA */
 
 .corpo {
-    background-color: gray;
-
-
-    margin-top: 23px;
+    background-color: #E5E5E5;
+    margin: 92px 0;
+    padding-top: 23px;
 }
 
 .comida {
-    background-color: yellow;
     height: 300px;
     width: 100%;
 }
 
 .bebida {
-    background-color: orange;
     height: 300px;
     width: 100%;
 }
 
 .sobremesa {
-    background-color: brown;
     height: 300px;
     width: 100%;
 }   
 
 .titulo-cardapio {
-    background-color: lightgrey;
     height: 32px;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -81,16 +77,11 @@ ion-icon {
 }
 
 .itens-cardapio {
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 15px;
     overflow-x: scroll;
-}
-
-.cardapio {
-    margin-bottom: 30px;
 }
 
 
@@ -106,6 +97,7 @@ ion-icon {
     flex-direction: column;
     justify-content: center;
     border-radius: 3%;
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.32);
 }
 
 .imagem-item {
@@ -142,6 +134,7 @@ ion-icon {
 
 
 /* RODAPE DO ITEM */
+
 .rodape-item {
     height: 40px;
     display: flex;
@@ -171,19 +164,36 @@ ion-icon {
 
 /* RODAPE DA PAGINA*/
 .rodape {
-    background-color: chartreuse;
+    background-color: #ffffff;
     width: 100%;
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .botao-rodape {
-    background-color: green;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 15px 0;
     width: 80%;
-    height: 50px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 23.44px; 
+    letter-spacing: 0.36px;
 }
+
+.botao-rodape p{
+    width: 190px;
+}
+
 
 /* EFEITOS */
 
@@ -191,6 +201,32 @@ ion-icon {
     display: none;
 }
 
-.borda, .item {
+.borda {
     border: 4px solid #32B72F;
+}
+
+.fundo-verde {
+    background-color: #32B72F;
+}
+
+.fundo-branco {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.confirmacao {
+    position: fixed;
+    top: calc(50% - 400px/2 - 0.5px);
+    left: 10%;
+    z-index: 2;
+    width: 80%;
+    height: 400px;
+    background-color: #50D074;
+    border-radius: 3%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.32);
 }

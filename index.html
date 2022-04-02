@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="finalizar-compra escondido">
+        <div class="confirmacao">
+            <div class="titulo-confirmacao"></div>
+            <div class="itens-confirmacao"></div>
+            <div class="total-confirmacao"></div>
+            <div class="botao-confirmacao"></div>
+            <div class="cancelar-confirmacao"></div>
+        </div>
+    </div>
+    <div class="fundo-branco escondido"></div>
     <div class="menu">
         <div class="topo">
             <div class="texto-topo">
@@ -25,102 +35,102 @@
                     <h2>Primeiro, seu prato</h2>
                 </div>
                 <div class="itens-cardapio">
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Spaguetti ao Capone.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Spaghetti ao Capone</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Macarrão ao molho vermelho e mix de carnes compactada</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>119.9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/espetinho barato.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Espetinho mó Barato</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Blattella germanica, especiaria deliciosa com ketchup</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>36</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/HotDog Vegano.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Hotdog Saudável</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Estilo americana. Pão, molho e uma delicosa banana</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>45.50</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/frango estranho.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Galinha ao Trono</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Frango sentado e assado no marmore. Delicioso! </p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>89.9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/abrir o apetite.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Queimaditos & Vina</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Remanescentes tostados de outros preparos. E vina</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>19.9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/iscas no bowl.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Bowl de Iscas</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Para ficar perfeito só falta um barquino no rio</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>59.9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
@@ -135,136 +145,136 @@
                     <h2>Agora, sua bebida</h2>
                 </div>
                 <div class="itens-cardapio">
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/drink bacon.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Suco a Pururuca</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Nada melhor para refrescar que: Limão, morango e bacon!</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>24</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Lago Nessy.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Lago Ness</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Tem coragem de deixar o monstro sair da taça?</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>79.9</p>
+                                <p>32</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Bruxa má.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Poção Simples</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Blueberry Martini levemente gaseificado *Bebida alcoólica</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>35</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/agua tiéte.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Tiéte's Drink</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Da nascente em Pedra rajada, vem por São Paulo até você</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Dedo D'agua.jpg" title="">
                         </div>
                         <div class="texto-item">
-                            <h3>Dedo D'água</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <h3>Coquetel de Dedo</h3>
+                            <p>Sourtue, do Canadá, champagne e um dedão do pé</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>41</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/polViwi.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Polviwi</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Polvo curtido na cachaça com Kiwi e um toque de morango</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>38</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/cara de barro.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Lodo Gourmet</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Sumo filtrado de um pantano gourmet e sapinho de chocolate </p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>51</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/café.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Cafézin Delicia</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Repita comigo: "Não se nega a ninguém, café!"" *item pago</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>11</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
@@ -278,102 +288,102 @@
                     <h2>Por fim, sua sobremesa</h2>
                 </div>
                 <div class="itens-cardapio">
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/adam's cake.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Addam's Cake</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Mão não comestivel e precisa ser devolvida. *A gerência </p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>25.5</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/brigadeiro-capim.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Brigadeiro de Capim</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Grama cultivada com água Voss e música clássica</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>14.9</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Cthulito.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>CthuLito</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Pirulito ardido com 4 sabores. Feito para fãs de RPG</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>18</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/pipoca.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Pipoga Gourmet</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Milho, com um lindo e delicado potinho. *plastico</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>30.01</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/Sorvete Fit.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Sorvete Fit</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Biju nacarada de sorvete, sem sorvete para manter a dieta</p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>17.40</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item" onclick="selecionar(this)" >
                         <div class="imagem-item">
                             <img src="/projeto3-driveneats/imagens/cafe acucar bulinho.jpg" title="">
                         </div>
                         <div class="texto-item">
                             <h3>Bulinho de Açucar</h3>
-                            <p>Macarrão com molho vermelho e salsicha estilizada</p>
+                            <p>Encantador bulinho para adoçar a vida. Pacote contém 2 </p>
                         </div>
                         <div class="rodape-item">
                             <div class="preco-item">
-                                <p>69.9</p>
+                                <p>23.72</p>
                             </div>
                             <div class="selecao-item escondido">
                                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
@@ -385,15 +395,9 @@
             </div>
         </div>
         <div class="rodape">
-            <div class="botao-rodape"></div>
-        </div>
-    <div class="finalizar-compra">
-        <div class="confirmacao">
-            <div class="titulo-confirmacao"></div>
-            <div class="itens-confirmacao"></div>
-            <div class="total-confirmacao"></div>
-            <div class="botao-confirmacao"></div>
-            <div class="cancelar-confirmacao"></div>
+            <div class="botao-rodape">
+                <p>Selecione os 3 itens para fechar o pedido</p>
+            </div>
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
