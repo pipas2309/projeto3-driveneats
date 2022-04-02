@@ -6,6 +6,10 @@ p, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow: overlay;
+}
+
 ion-icon {
     color: #32B72F;
     font-size: 23px;
@@ -43,9 +47,9 @@ ion-icon {
 
 .corpo {
     background-color: gray;
-    width: 100%;
-    min-height: 900px;
-    margin-top: 30px;
+
+
+    margin-top: 23px;
 }
 
 .comida {
@@ -68,10 +72,12 @@ ion-icon {
 
 .titulo-cardapio {
     background-color: lightgrey;
-    width: 280px;
     height: 32px;
     margin-bottom: 10px;
+    margin-left: 15px;
     font-family: 'Righteous', cursive;
+    font-size: 28px;
+    color: #333333;
 }
 
 .itens-cardapio {
@@ -79,24 +85,28 @@ ion-icon {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 15px;
+    margin: 0 15px;
+    overflow-x: scroll;
 }
 
 .cardapio {
     margin-bottom: 30px;
 }
 
+
+/* ITENS DA PAGINA */
+
 .item {
-    background-color: purple;
+    background-color: rgb(248, 238, 238);
     width: 180px;
     height: 230px;
     margin-right: 15px;
+    padding: 10px 10px 5px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 3%;
 }
-
-/* ITENS DA PAGINA */
 
 .imagem-item {
     display: flex;
@@ -104,16 +114,15 @@ ion-icon {
     align-items: center;
 }
 
-.imagem-item img{
-    background-color: pink;
-    width: 170px;
+.imagem-item img {
+    width: 160px;
     height: auto;
-    border-radius: 10%;
+    border-radius: 6%;
 }
 
 .texto-item {
     height: 74px;
-    margin: 3px 5px;
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +131,7 @@ ion-icon {
 .texto-item h3 {
     font-weight: bold;
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: #333333;
 }
 
@@ -134,16 +143,14 @@ ion-icon {
 
 /* RODAPE DO ITEM */
 .rodape-item {
-    background-color: aliceblue;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5px;
+    margin-top: 8px;
 }
 
 .preco-item, .preco-real {
-    background-color: yellowgreen;
     width: 100px;
     height: 25px;
     display: flex;
@@ -153,7 +160,6 @@ ion-icon {
 }
 
 .selecao-item {
-    background-color: green;
     width: 25px;
     height: 25px;
     display: flex;
@@ -177,4 +183,14 @@ ion-icon {
     background-color: green;
     width: 80%;
     height: 50px;
+}
+
+/* EFEITOS */
+
+.escondido {
+    display: none;
+}
+
+.borda, .item {
+    border: 4px solid #32B72F;
 }
