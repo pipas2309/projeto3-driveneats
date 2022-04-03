@@ -26,6 +26,7 @@ body{
     top: 0;
     left: 0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.32);
+    z-index: 1;
 }
 
 .texto-topo {
@@ -178,6 +179,7 @@ body{
     align-items: center;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 
 .botao-rodape {
@@ -207,7 +209,7 @@ body{
     position: fixed;
     top: calc(50% - 400px/2 - 0.5px);
     left: 10%;
-    z-index: 2;
+    z-index: 3;
     width: 80%;
     height: 400px;
     background-color: #50D074;
@@ -312,7 +314,7 @@ body{
 .fundo-branco {
     background-color: rgba(255, 255, 255, 0.85);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -329,7 +331,7 @@ body{
 
 .pedido-feito {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: calc(35% - 265px/2);
     left: calc(50% - 376px/2);
     justify-content: center;
