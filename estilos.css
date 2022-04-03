@@ -279,7 +279,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
 }
 
 .botao-confirmacao p {
@@ -291,9 +291,8 @@ body{
 .cancelar-confirmacao {
     font-size: 18px;
     font-weight: 700;
-
+    cursor: pointer;
 }
-
 
 
 
@@ -321,5 +320,41 @@ body{
 }
 
 .cursor {
+    cursor: pointer;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.pedido-feito {
+    position: fixed;
+    z-index: 2;
+    top: calc(35% - 265px/2);
+    left: calc(50% - 376px/2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pedido-feito p {
+    text-align: center;
+    font-size: 32px;
+    margin: 23px 0;
+    font-weight: 700;
+    color: #32B72F;
+}
+
+.pedido-feito p:last-child{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 300px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #32B72F;
     cursor: pointer;
 }

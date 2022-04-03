@@ -1,7 +1,5 @@
 // Valores em R$ - pt-br
-
-precoSite()
-
+precoSite();
 function precoSite() {
     const item = document.querySelector(".preco-item");
     const valor = document.querySelector(".preco-item p").innerHTML;
@@ -13,7 +11,7 @@ function precoSite() {
     item.classList.remove("preco-item");
 
     if(document.querySelector(".preco-item") !== null) {
-        precoSite()
+        precoSite();
     }
 }
 
@@ -135,8 +133,39 @@ function listaSelecionada () {
 
 }
 
+// Confirmar pedido 
+function confirmar() {
+    let mensagem = `Olá, gostaria de fazer o pedido:
+- Prato: ${document.querySelector(".comida-escolhida").firstElementChild.innerHTML}
+- Bebida: ${document.querySelector(".bebida-escolhida").firstElementChild.innerHTML}
+- Sobremesa: ${document.querySelector(".sobremesa-escolhida").firstElementChild.innerHTML} 
+Total: ${document.querySelector(".total-confirmacao").lastElementChild.innerText}
+
+Nome: ${prompt("Boa noite! Por favor, qual seu nome?")}
+Endereço: ${prompt("Para terminar seu pedido, qual seu endereço?")}`;
+  
+    let uri = `https://wa.me/5511944889740?text=${encodeURIComponent(mensagem)}`;
+    window.open(uri);
+
+    return tudoCerto();
+}
+
 // Cancelar pedido
 function cancelar() {
     document.querySelector(".finalizar-compra").classList.add("escondido");
     document.querySelector(".fundo-branco").classList.add("escondido");
+}
+
+// Após confirmar o pedido 
+function tudoCerto() {
+    document.querySelector(".finalizar-compra").classList.add("escondido");
+    document.querySelector(".pedido-feito").classList.remove("escondido");
+    document.querySelector(".pedido-feito").classList.add("display-flex");
+}
+
+// Ainda tem fome?
+function maisFome() {
+    document.querySelector(".pedido-feito").classList.add("escondido");
+    document.querySelector(".fundo-branco").classList.add("escondido");
+    document.querySelector(".pedido-feito").classList.remove("display-flex");
 }
