@@ -135,14 +135,43 @@ function listaSelecionada () {
 
 // Confirmar pedido 
 function confirmar() {
-    let mensagem = `Olá, gostaria de fazer o pedido:
+
+    let seuNome = prompt("Boa noite! Por favor, qual seu nome?");
+    if(seuNome === "") {
+        return alert("Desculpe, não servimos comida para aquele que não deve ser nomeado");
+    }
+
+    let seuEndereco = prompt("Para terminar seu pedido, qual seu endereço?");
+    if(seuEndereco === "") {
+        return alert("Infelizmente não foi possível concatenar duas classes: Motoboy e Vidente");
+    }
+
+    let mensagem = "";
+
+    if(seuNome === "Pepsi") {
+
+        mensagem = `Olá, gostaria de fazer o pedido:
+- Prato: ${document.querySelector(".comida-escolhida").firstElementChild.innerHTML}
+- Bebida: ${document.querySelector(".bebida-escolhida").firstElementChild.innerHTML}
+- Sobremesa: ${document.querySelector(".sobremesa-escolhida").firstElementChild.innerHTML} 
+Total: ${document.querySelector(".total-confirmacao").lastElementChild.innerText}
+        
+Nome: ${seuNome}
+Endereço: ${seuEndereco}
+        
+*Grátis, uma coquinha gelada!`;
+
+    } else {
+
+    mensagem = `Olá, gostaria de fazer o pedido:
 - Prato: ${document.querySelector(".comida-escolhida").firstElementChild.innerHTML}
 - Bebida: ${document.querySelector(".bebida-escolhida").firstElementChild.innerHTML}
 - Sobremesa: ${document.querySelector(".sobremesa-escolhida").firstElementChild.innerHTML} 
 Total: ${document.querySelector(".total-confirmacao").lastElementChild.innerText}
 
-Nome: ${prompt("Boa noite! Por favor, qual seu nome?")}
-Endereço: ${prompt("Para terminar seu pedido, qual seu endereço?")}`;
+Nome: ${seuNome}
+Endereço: ${seuEndereco}`;
+    }
   
     let uri = `https://wa.me/5511944889740?text=${encodeURIComponent(mensagem)}`;
     window.open(uri);
