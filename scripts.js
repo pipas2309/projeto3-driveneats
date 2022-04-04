@@ -137,12 +137,12 @@ function listaSelecionada () {
 function confirmar() {
 
     let seuNome = prompt("Boa noite! Por favor, qual seu nome?");
-    if(seuNome === "") {
+    if(seuNome === "" || seuNome === null) {
         return alert("Desculpe, não servimos comida para aquele que não deve ser nomeado");
     }
 
     let seuEndereco = prompt("Para terminar seu pedido, qual seu endereço?");
-    if(seuEndereco === "") {
+    if(seuEndereco === "" || seuEndereco === null) {
         return alert("Infelizmente não foi possível concatenar duas classes: Motoboy e Vidente");
     }
 
