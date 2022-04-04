@@ -1,4 +1,4 @@
-// Valores em R$ - pt-br
+// Valores em R$ - pt-br (testando a funcionalidade da função)
 precoSite();
 function precoSite() {
     const item = document.querySelector(".preco-item");
@@ -103,8 +103,9 @@ function fecharPedido () {
     if (comprar() === 3) {
         document.querySelector(".finalizar-compra").classList.remove("escondido");
         document.querySelector(".fundo-branco").classList.remove("escondido");
+        return listaSelecionada();
     }
-    return listaSelecionada();
+    
 }
 
 // Itens no fechar pedido
